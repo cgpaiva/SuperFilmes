@@ -16,6 +16,12 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+//    testOptions {
+//        // Used for Unit testing Android dependent elements in /test folder
+//        unitTests.includeAndroidResources  = true
+//        unitTests.returnDefaultValues = true
+//    }
+
     buildTypes {
         release {
             minifyEnabled false
