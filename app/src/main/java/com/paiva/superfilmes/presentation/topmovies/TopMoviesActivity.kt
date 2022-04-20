@@ -11,6 +11,6 @@ class TopMoviesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        viewModel.teste()
+        viewModel.getTopMovies()
     }
 }
