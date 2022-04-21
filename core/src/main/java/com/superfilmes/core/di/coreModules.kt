@@ -4,6 +4,7 @@ import com.superfilmes.core.BuildConfig
 import com.superfilmes.core.data.MovieDataSource
 import com.superfilmes.core.data.MovieRepository
 import com.superfilmes.core.interactors.GetMoviesUseCase
+import com.superfilmes.core.interactors.SearchMovieUseCase
 import okhttp3.OkHttpClient
 import org.koin.dsl.module
 import retrofit2.Retrofit
@@ -13,6 +14,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 val usesCase = module {
   single { ( MovieRepository(get())) }
   single { GetMoviesUseCase(get()) }
+  single { SearchMovieUseCase(get()) }
 }
 
 val apiModule = module {

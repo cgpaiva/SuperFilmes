@@ -1,6 +1,7 @@
 package com.superfilmes.core.data
 
 import com.superfilmes.core.domain.Movie
+import com.superfilmes.core.domain.MovieSearch
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -14,5 +15,5 @@ interface MovieDataSource {
     @GET("SearchMovie")
     suspend fun getMovieWithName(
         @Query("apikey") apikey: String,
-        @Query("expression") expression: String): Movie
+        @Query("expression") expression: String = "Spider Man"): MovieSearch
 }
