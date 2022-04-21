@@ -6,4 +6,6 @@
     <dimen name="default_10dp">10dp</dimen>
     <dimen name="default_30dp">30dp</dimen>
     <dimen name="default_20dp">20dp</dimen>
+    <dimen name="default_size_16dp">16sp</dimen>
+    <dimen name="default_15dp">15dp</dimen>
 </resources>
