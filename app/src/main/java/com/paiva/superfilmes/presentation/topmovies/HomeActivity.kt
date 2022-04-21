@@ -10,8 +10,8 @@ import com.superfilmes.core.domain.MovieItem
 import com.superfilmes.core.domain.SearchResult
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class TopMoviesActivity : AppCompatActivity() {
-    private val viewModel: TopMoviesViewModel by viewModel()
+class HomeActivity : AppCompatActivity() {
+    private val viewModel: HomeViewModel by viewModel()
     private lateinit var binding: TopMoviesActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -67,20 +67,20 @@ class TopMoviesActivity : AppCompatActivity() {
 
 
     private fun setUpError(localizedMessage: String?) {
-
+        Toast.makeText(this, localizedMessage, Toast.LENGTH_SHORT).show()
     }
 
     private fun setUpTopMoviesRecyclerView(movieList: List<MovieItem>) {
         binding.recyclerViewTopMovies.apply {
             layoutManager =
-                LinearLayoutManager(this@TopMoviesActivity, LinearLayoutManager.HORIZONTAL, false)
-            adapter = TopMoviesAdapter(movieList)
+                LinearLayoutManager(this@HomeActivity, LinearLayoutManager.HORIZONTAL, false)
+            adapter = HomeAdapter(movieList)
         }
     }
 
     private fun configRecyclerviewSearchMovie(searchResult: List<SearchResult>) {
         binding.recyclerViewSearchMovies.apply {
-            layoutManager = LinearLayoutManager(this@TopMoviesActivity)
+            layoutManager = LinearLayoutManager(this@HomeActivity)
             adapter = SearchMovieAdapter(searchResult)
         }
     }

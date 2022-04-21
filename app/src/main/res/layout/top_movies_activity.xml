@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/dark_purple"
     android:fillViewport="true"
-    tools:context=".presentation.topmovies.TopMoviesActivity">
+    tools:context=".presentation.topmovies.HomeActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

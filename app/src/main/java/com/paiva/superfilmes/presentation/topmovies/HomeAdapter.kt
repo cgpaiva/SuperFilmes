@@ -13,9 +13,9 @@ import com.bumptech.glide.request.RequestOptions
 import com.paiva.superfilmes.R
 import com.superfilmes.core.domain.MovieItem
 
-class TopMoviesAdapter(
+class HomeAdapter(
     private val movieList: List<MovieItem>
-    ): RecyclerView.Adapter<TopMoviesAdapter.MovieViewHolder>() {
+    ): RecyclerView.Adapter<HomeAdapter.MovieViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.movie_item, parent, false)

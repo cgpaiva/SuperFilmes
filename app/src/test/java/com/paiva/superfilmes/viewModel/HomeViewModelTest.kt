@@ -5,7 +5,7 @@ import com.google.gson.reflect.TypeToken
 import com.paiva.superfilmes.BaseUnitTest
 import com.paiva.superfilmes.presentation.topmovies.SearchMoviesState
 import com.paiva.superfilmes.presentation.topmovies.TopMoviesState
-import com.paiva.superfilmes.presentation.topmovies.TopMoviesViewModel
+import com.paiva.superfilmes.presentation.topmovies.HomeViewModel
 import com.superfilmes.core.data.MovieDataSource
 import com.superfilmes.core.data.MovieRepository
 import com.superfilmes.core.domain.Movie
@@ -28,7 +28,7 @@ import org.junit.runners.JUnit4
 
 @ExperimentalCoroutinesApi
 @RunWith(JUnit4::class)
-class TopMoviesViewModelTest : BaseUnitTest() {
+class HomeViewModelTest : BaseUnitTest() {
 
     @get:Rule
     var instantExecutorRule = InstantTaskExecutorRule()
@@ -36,7 +36,7 @@ class TopMoviesViewModelTest : BaseUnitTest() {
     @get:Rule
     private val testDispatcher = TestCoroutineDispatcher()
 
-    private lateinit var topMovieViewModel: TopMoviesViewModel
+    private lateinit var topMovieViewModel: HomeViewModel
     private lateinit var getMoviesUseCase: GetMoviesUseCase
     private lateinit var movieRepository: MovieRepository
     private lateinit var movieDataSource: MovieDataSource
@@ -51,7 +51,7 @@ class TopMoviesViewModelTest : BaseUnitTest() {
         movieRepository = spyk(MovieRepository(dataSource = movieDataSource))
         searchUseCase = spyk(SearchMovieUseCase(movieRepository = movieRepository))
         getMoviesUseCase = spyk(GetMoviesUseCase(movieRepository = movieRepository))
-        topMovieViewModel = TopMoviesViewModel(getMoviesUseCase, searchUseCase)
+        topMovieViewModel = HomeViewModel(getMoviesUseCase, searchUseCase)
 
     }
 

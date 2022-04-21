@@ -8,7 +8,7 @@ import com.superfilmes.core.interactors.GetMoviesUseCase
 import com.superfilmes.core.interactors.SearchMovieUseCase
 import kotlinx.coroutines.launch
 
-class TopMoviesViewModel(
+class HomeViewModel(
     private val topMoviesUseCase: GetMoviesUseCase,
     private val searchMoviesUseCase: SearchMovieUseCase
 ) : ViewModel() {
