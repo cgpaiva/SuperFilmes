@@ -1,0 +1,21 @@
+{
+  "errorMessage": "",
+  "expression": "Spider",
+  "results": [
+    {
+      "description": "(2001)",
+      "id": "tt0164334",
+      "image": "https://imdb-api.com/images/original/MV5BOTVlY2VhMWEtYmRlOC00YWVhLWEzMDktZWJlYzNiMWJmZTIwXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_Ratio0.7273_AL_.jpg",
+      "resultType": "Title",
+      "title": "Along Came a Spider"
+    },
+    {
+      "description": "(2002)",
+      "id": "tt0278731",
+      "image": "https://imdb-api.com/images/original/MV5BMmY4OGRmNWMtNmIyNS00YWQ5LWJmMGUtMDI3MWRlMmQ0ZDQzL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_Ratio0.7273_AL_.jpg",
+      "resultType": "Title",
+      "title": "Spider"
+    }
+  ],
+  "searchType": "Movie"
+}
