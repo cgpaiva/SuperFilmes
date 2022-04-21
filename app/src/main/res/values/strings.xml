@@ -3,4 +3,5 @@
     <string name="edit_text_search_movie">Buscar filmes</string>
     <string name="movie_category">Categorias</string>
     <string name="top_250">Top 250</string>
+    <string name="error_empty_search">É necessário preencher o campo de busca</string>
 </resources>

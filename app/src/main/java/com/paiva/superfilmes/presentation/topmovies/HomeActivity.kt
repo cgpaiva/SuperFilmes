@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.paiva.superfilmes.R
 import com.paiva.superfilmes.databinding.TopMoviesActivityBinding
 import com.superfilmes.core.domain.MovieItem
 import com.superfilmes.core.domain.SearchResult
@@ -27,7 +28,7 @@ class HomeActivity : AppCompatActivity() {
     private fun configListeners() {
         binding.cardViewSearchMovie.setOnClickListener {
             if (binding.editTextSearchMovie.text.isNullOrBlank()){
-                Toast.makeText(this, "É necessário preencher o campo de busca", Toast.LENGTH_SHORT)
+                Toast.makeText(this, getString(R.string.error_empty_search), Toast.LENGTH_SHORT)
                     .show()
                 return@setOnClickListener
             }
